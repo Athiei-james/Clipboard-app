@@ -1,0 +1,528 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+}
+
+h1,
+h2,
+h3 {
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+}
+
+p {
+  color: hsl(201, 11%, 66%);
+}
+
+*:focus {
+  outline: none;
+  outline: 8px solid rgba(38, 186, 164, 0.208);
+}
+
+.secondary-header,
+.secondary-text,
+.tertiary-text,
+.primary-text {
+  text-align: center;
+}
+
+.primary-header {
+  font-size: 4.4rem;
+  margin-bottom: 2rem;
+}
+
+.primary-text {
+  font-size: 2rem;
+  line-height: 1.3;
+  margin-bottom: 3.2rem;
+}
+
+.secondary-header {
+  font-size: 3.6rem;
+  margin-top: 11.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.secondary-text {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  margin-bottom: 6.4rem;
+}
+
+.tertiary-header {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 4rem;
+}
+
+.tertiary-text {
+  font-size: 1.4rem;
+  line-height: 1.5;
+}
+
+.header,
+.container {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+.container-a {
+  max-width: 100rem;
+  margin: 0 auto 9.6rem;
+}
+
+.flex-box {
+  display: flex;
+  align-items: center;
+}
+
+.img-copyright,
+.device,
+.icons,
+.copy {
+  flex-direction: column;
+}
+
+.button,
+.device,
+.icons,
+.img-copyright {
+  justify-content: center;
+}
+
+.img-copyright {
+  margin-bottom: 4.8rem;
+  background-image: url(images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  align-items: center;
+}
+
+.header {
+  margin-top: -6.4rem;
+}
+
+/* .copyright-logo {
+  height: 13.8rem;
+} */
+
+.copyright-logo {
+  width: 13.8rem;
+}
+
+.copy-link:link,
+.copy-link:visited,
+.media-link:link,
+.media-link:visited {
+  display: block;
+}
+
+.link:link,
+.link:visited,
+.btn:link,
+.btn:visited {
+  transition: all 0.3s;
+}
+
+.button {
+  gap: 2rem;
+}
+
+.btn--2 {
+  margin-bottom: 12.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 1.8rem;
+  text-decoration: none;
+  border-radius: 10rem;
+  padding: 1.5rem 3rem;
+  color: #fff;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.215);
+}
+
+.ios:link,
+.ios:visited {
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: 0 5px 10px rgba(38, 186, 164, 0.3);
+}
+
+.mac:link,
+.mac:visited {
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: 0 5px 10px rgba(97, 115, 255, 0.2);
+}
+
+.ios:hover,
+.ios:active {
+  background-color: rgba(38, 186, 164, 0.817);
+  box-shadow: 0 5px 10px rgba(38, 186, 164, 0.3);
+}
+
+.mac:hover,
+.mac:active {
+  background-color: rgba(97, 115, 255, 0.774);
+  box-shadow: 0 5px 10px rgba(97, 115, 255, 0.2);
+}
+
+.grid--2 {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+}
+
+.details {
+  width: 70%;
+}
+
+.img-computer {
+  width: 85%;
+}
+
+.computer-image {
+  margin-left: -4.5rem;
+}
+
+.text-details {
+  font-size: 1.6rem;
+  margin-bottom: 3.2rem;
+  line-height: 1.5;
+}
+
+.img-device {
+  width: 120%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 2rem;
+}
+
+.grid .tertiary-header {
+  text-align: center;
+}
+
+.icon {
+  height: 3.2rem;
+}
+
+.logos {
+  justify-content: space-between;
+  margin-top: 14.2rem;
+}
+
+.logo {
+  height: 3.2rem;
+}
+
+.copy {
+  margin-right: 8rem;
+}
+
+.copy-logo {
+  height: 4.4rem;
+}
+
+.footer {
+  background-color: hsla(202, 11%, 66%, 0.146);
+  height: 14.2rem;
+  padding: 5.2rem;
+}
+
+.css-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1.5fr;
+}
+
+.media {
+  margin-left: auto;
+}
+
+.media-icon {
+  height: 2.4rem;
+}
+
+.list {
+  list-style: none;
+}
+
+.link:link,
+.link:visited {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: hsl(210, 10%, 33%);
+  text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+  color: hsl(171, 66%, 44%);
+}
+
+.media-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.media-link:link,
+.media-link:visited {
+  display: block;
+}
+
+.media-link:hover,
+.media-link:active {
+  color: #26baa4;
+}
+
+/* Media query */
+/* Below 944px (Tables) */
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 0.5 = 50% */
+    font-size: 50%;
+  }
+
+  .container-a {
+    margin: 0 3.2rem;
+  }
+
+  .img-copyright {
+    height: 35vh;
+  }
+
+  .copy {
+    margin-right: 4.8rem;
+  }
+}
+
+/* Below 704px (Small tables) */
+@media (max-width: 44em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .primary-header {
+    text-align: center;
+  }
+
+  .copyright-logo {
+    padding-top: 12.8rem;
+  }
+
+  .img-copyright {
+    margin-bottom: 1rem;
+  }
+
+  .grid--2 {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 6.4rem;
+  }
+
+  .computer-image {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .css-grid {
+    gap: 1.5rem;
+    line-height: 1.5;
+  }
+}
+
+/* Below 624px (Mobile) */
+@media (max-width: 39em) {
+  html {
+    font-size: 37.5%;
+  }
+
+  .primary-header,
+  .tertiary-header,
+  .secondary-text,
+  .text-details {
+    text-align: center;
+  }
+
+  .container,
+  .header {
+    padding: 0 2rem;
+  }
+
+  .container-a {
+    padding: 0 3rem;
+  }
+
+  .img-copyright {
+    margin-bottom: 4.8rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    background-image: url(images/bg-header-mobile.png);
+  }
+
+  .header {
+    margin-top: -3.6rem;
+  }
+
+  .copyright-logo {
+    width: 20rem;
+  }
+
+  .primary-header {
+    font-size: 6.4rem;
+    line-height: 1.3;
+    margin-bottom: 4.4rem;
+  }
+
+  .primary-text {
+    font-size: 3.6rem;
+    line-height: 1.5;
+    margin-bottom: 8rem;
+  }
+
+  .secondary-header {
+    font-size: 6.4rem;
+    margin-bottom: 5.2rem;
+    line-height: 1.2;
+  }
+
+  .secondary-text {
+    font-size: 3.4rem;
+    line-height: 1.6;
+  }
+
+  .tertiary-header {
+    font-size: 4.4rem;
+    margin-bottom: 3.6rem;
+  }
+
+  .tertiary-text {
+    font-size: 3.2rem;
+  }
+
+  .text-details {
+    font-size: 3.2rem;
+    margin-bottom: 9.6rem;
+  }
+
+  .button {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    margin-bottom: 25rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 2.4rem;
+    padding: 3rem 16rem;
+  }
+
+  .grid--2 {
+    margin: 14.8rem 0 12.8rem;
+  }
+
+  .img-device {
+    width: 100%;
+  }
+
+  .device {
+    margin-bottom: 20rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 12.8rem;
+    margin-top: 12.8rem;
+  }
+
+  .icon {
+    height: 6.4rem;
+  }
+
+  .icons {
+    margin-bottom: 8rem;
+  }
+
+  .logos {
+    flex-direction: column;
+    gap: 9.6rem;
+    margin: 25rem 0;
+  }
+
+  .logo {
+    height: 6.4rem;
+  }
+
+  .css-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer {
+    height: 50%;
+  }
+
+  .copy-logo {
+    height: 9.6rem;
+  }
+
+  .copy {
+    margin: 5.2rem 0 6.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .link:link,
+  .link:visited {
+    font-size: 2.4rem;
+    margin-bottom: 4.8rem;
+    text-align: center;
+  }
+
+  .list:last-child {
+    margin-bottom: 0;
+  }
+
+  .media {
+    margin-left: 0;
+  }
+
+  .media-icon {
+    height: 3.6rem;
+  }
+
+  .media-list {
+    justify-content: center;
+    gap: 4.8rem;
+    margin-top: 2rem;
+  }
+}
